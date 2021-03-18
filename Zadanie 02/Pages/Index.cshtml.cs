@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Zadanie2.Forms;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace Zadanie2.Pages
 {
@@ -32,13 +34,11 @@ namespace Zadanie2.Pages
         {
             if (ModelState.IsValid)
             {
-                return RedirectToPage("./Privacy");
-            }
-            else
-            {
-                return Page();
+                HttpContext.Session.SetString("SessionAddress", JsonConvert.SerializeObject(Address));
+                return RedirectToPage("./Address");
             }
             
+            return Page();
         }
     }
 }

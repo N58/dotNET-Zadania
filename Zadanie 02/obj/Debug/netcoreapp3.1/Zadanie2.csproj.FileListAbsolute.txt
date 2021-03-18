@@ -38,8 +38,6 @@ C:\Users\kryst\source\repos\Zadanie2\obj\Debug\netcoreapp3.1\Zadanie2.csproj.Cop
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.csprojAssemblyReference.cache
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.AssemblyInfoInputs.cache
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.AssemblyInfo.cs
-C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.csproj.CoreCompileInputs.cache
-C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.RazorAssemblyInfo.cache
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.RazorAssemblyInfo.cs
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.dll
@@ -72,3 +70,7 @@ C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\st
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\staticwebassets\Zadanie2.StaticWebAssets.xml
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.genruntimeconfig.cache
 C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.csproj.CopyComplete
+C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Razor\Pages\Address.cshtml.g.cs
+C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.csproj.CoreCompileInputs.cache
+C:\Users\kryst\source\repos\dotNET-Zadania\Zadanie 02\obj\Debug\netcoreapp3.1\Zadanie2.MvcApplicationPartsAssemblyInfo.cache
