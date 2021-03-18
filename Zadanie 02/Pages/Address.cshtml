@@ -3,7 +3,7 @@
 @{
 }
 
-<p>Dane zapisane w sesji</p>
+<p>Dane zapisane w sesji:</p>
 @if (Model.Address != null)
 {
     <p>
@@ -18,4 +18,17 @@
     <p>
         @Html.DisplayNameFor(model => Model.Address.City): @Model.Address.City
     </p>
+}
+
+<hr />
+
+<p>Historia adresów:</p>
+@foreach (Forms.Address addr in Model.AddressList)
+{
+<p>
+    @Html.DisplayNameFor(model => Model.Address.Street): @addr.Street <br />
+    @Html.DisplayNameFor(model => Model.Address.Number): @addr.Number <br />
+    @Html.DisplayNameFor(model => Model.Address.ZipCode): @addr.ZipCode <br />
+    @Html.DisplayNameFor(model => Model.Address.City): @addr.City <br />
+</p>
 }
