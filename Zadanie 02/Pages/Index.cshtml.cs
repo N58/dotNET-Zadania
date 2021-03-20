@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 using Zadanie2.Forms;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using System.Diagnostics;
 
 namespace Zadanie2.Pages
 {

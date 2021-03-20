@@ -1,10 +1,22 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Strona główna";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form method="post">
+    <label asp-for="FizzNumber.Number"></label>
+    <input asp-for="FizzNumber.Number" class="form-control" />
+    <span asp-validation-for="FizzNumber.Number" class="text-danger"></span><br />
+
+    <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>
+
+@if (@Model.LastNumber != null)
+{
+    <p>
+        <b>@Html.DisplayNameFor(model => Model.LastNumber.Number):</b> @Model.LastNumber.Number<br />
+        <b>@Html.DisplayNameFor(model => Model.LastNumber.Result):</b> @Model.LastNumber.Result<br />
+        <b>@Html.DisplayNameFor(model => Model.LastNumber.DateTime):</b> @Model.LastNumber.DateTime
+    </p>
+}
