@@ -1,0 +1,48 @@
+﻿@page
+@model Zadanie_4.Numbers.IndexModel
+@using Zadanie_3;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="/Index">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FizzNumber[0].Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FizzNumber[0].Result)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FizzNumber[0].DateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.FizzNumber)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                <td>
+                    @Utils.GetFizzString(item)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateTime)
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
