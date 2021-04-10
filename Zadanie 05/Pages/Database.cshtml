@@ -1,0 +1,19 @@
+﻿@page
+@model Zadanie_5.Pages.DatabaseModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pobrane z bazy danych</h1>
+</div>
+
+<div class="card-columns">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card">
+            <div class="card-img" style="background-image: url('@product.Image');"></div>
+            <div class="card-body">@product.Title</div>
+        </div>
+
+    }
+</div>

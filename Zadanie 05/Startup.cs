@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Zadanie_5.Data;
 using Zadanie_5.Services;
 
 namespace Zadanie_5
@@ -24,9 +26,13 @@ namespace Zadanie_5
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<>
+            services.AddDbContext<ProductsContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("ProductsDB"));
+            });
             services.AddRazorPages();
             services.AddTransient<JsonFileProductService>();
+            services.AddTransient<DatabaseProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

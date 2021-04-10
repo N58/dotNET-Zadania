@@ -7,8 +7,9 @@ using Zadanie_5.Models;
 
 namespace Zadanie_5.Data
 {
-    public class ProductsContext
+    public class ProductsContext : DbContext
     {
-        public DbSet<Product>
+        public DbSet<Product> Products { get; set; }
+        public ProductsContext(DbContextOptions options) : base(options) { }
     }
 }
