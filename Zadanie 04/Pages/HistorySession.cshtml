@@ -1,0 +1,25 @@
+﻿@page
+@model Zadanie_3.Pages.HistorySessionModel
+@using Zadanie_3;
+@{
+    ViewData["Title"] = "Lista ostatnio szukanych";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.NumbersList != null && Model.NumbersList.Count > 0)
+{
+    foreach (Forms.FizzNumber item in Model.NumbersList)
+    {
+        <p>
+            <b>@Html.DisplayNameFor(model => item.Number):</b> @item.Number<br />
+            <b>@Html.DisplayNameFor(model => item.Result):</b> @Utils.GetFizzString(item)<br />
+            <b>@Html.DisplayNameFor(model => item.DateTime):</b>  @item.DateTime
+        </p>
+    }
+}
+else
+{
+    <p>
+        Brak wyszukiwań!
+    </p>
+}
