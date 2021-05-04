@@ -17,7 +17,6 @@ namespace Zadanie_6
         public BrowserNameMiddleware(RequestDelegate next)
         {
             _next = next;
-            
         }
 
         public Task Invoke(HttpContext context, IBrowserDetector browserDetector)
